@@ -1,0 +1,261 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "submit": "Soumettre",
+    "back": "Retour",
+    "required": "Requis",
+    "retry": "Réessayer"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "calculator": "Calculateur",
+    "explore": "Explorer",
+    "universities": "Universités",
+    "universitiesDirectory": "Répertoire des Universités",
+    "favorites": "Favoris",
+    "guide": "Guide",
+    "calendar": "Calendrier",
+    "about": "À propos",
+    "profile": "Profil",
+    "login": "Connexion",
+    "register": "Inscription",
+    "logout": "Déconnexion"
+  },
+  "auth": {
+    "login": "Connexion",
+    "register": "Inscription",
+    "logout": "Déconnexion",
+    "email": "Email",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "phone": "Téléphone",
+    "birthDate": "Date de naissance",
+    "gender": "Genre",
+    "male": "Masculin",
+    "female": "Féminin",
+    "forgotPassword": "Mot de passe oublié ?",
+    "noAccount": "Vous n'avez pas de compte ?",
+    "hasAccount": "Vous avez déjà un compte ?",
+    "createAccount": "Créer un compte",
+    "signIn": "Se connecter",
+    "signUp": "S'inscrire",
+    "loginSuccess": "Connexion réussie",
+    "registerSuccess": "Inscription réussie",
+    "loginError": "Échec de la connexion",
+    "registerError": "Échec de l'inscription",
+    "invalidEmail": "Email invalide",
+    "passwordTooShort": "Mot de passe trop court",
+    "passwordsDontMatch": "Les mots de passe ne correspondent pas"
+  },
+  "calculator": {
+    "title": "Calculateur de Score d'Orientation",
+    "subtitle": "Calculez votre score pour l'orientation universitaire",
+    "form": {
+      "bacType": "Type de Baccalauréat",
+      "bacScore": "Score du Baccalauréat",
+      "calculate": "Calculer",
+      "reset": "Réinitialiser"
+    },
+    "result": {
+      "title": "Votre Score d'Orientation",
+      "score": "Score calculé",
+      "recommendations": "Recommandations",
+      "explorePrograms": "Explorer les programmes"
+    },
+    "subjects": "Matières",
+    "scores": "Notes",
+    "calculating": "Calcul en cours...",
+    "required": "Requis",
+    "result": "Résultat",
+    "totalScore": "Score total",
+    "average": "Moyenne",
+    "formula": "Formule utilisée",
+    "coefficients": "Coefficients",
+    "enterScores": "Entrez vos notes dans chaque matière",
+    "invalidScore": "La note doit être entre 0 et 20",
+    "calculationError": "Erreur de calcul",
+    "selectStream": "Sélectionnez votre filière BAC",
+    "startCalculation": "Commencer le calcul",
+    "recommendationsDescription": "Les recommandations apparaîtront ici basées sur vos points et votre filière",
+    "basedOnScore": "Basé sur les points",
+    "stream": "Filière",
+    "programs": "Programmes",
+    "program": "Programme",
+    "requiredScore": "Score requis",
+    "noRecommendations": "Aucune recommandation",
+    "tryDifferentScore": "Essayez des points différents ou une autre filière"
+  },
+  "home": {
+    "title": "Bienvenue dans votre Assistant d'Orientation Universitaire",
+    "subtitle": "Découvrez les meilleures opportunités académiques en Tunisie",
+    "getStarted": "Commencer",
+    "learnMore": "En savoir plus",
+    "features": {
+      "calculator": {
+        "title": "Calculateur de points",
+        "description": "Calculez les points FG et T avec précision en utilisant les formules officielles"
+      },
+      "universities": {
+        "title": "Base de Données des Universités",
+        "description": "Explorez tous les programmes universitaires disponibles"
+      },
+      "calendar": {
+        "title": "Calendrier universitaire",
+        "description": "Suivez toutes les dates importantes de l'orientation universitaire"
+      },
+      "favorites": {
+        "title": "Programmes Favoris",
+        "description": "Sauvegardez et suivez vos programmes préférés"
+      }
+    },
+    "cta": {
+      "title": "Prêt à commencer votre parcours universitaire ?",
+      "description": "Utilisez notre calculateur de score pour découvrir les programmes qui vous correspondent",
+      "button": "Calculer mon score"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "personalInfo": "Informations personnelles",
+    "academicInfo": "Informations académiques",
+    "preferences": "Préférences",
+    "updateProfile": "Mettre à jour le profil",
+    "changePassword": "Changer le mot de passe"
+  },
+  "explore": {
+    "title": "Explorer les Programmes",
+    "searchPrograms": "Rechercher des programmes",
+    "filters": "Filtres",
+    "university": "Université",
+    "field": "Domaine",
+    "level": "Niveau",
+    "region": "Région",
+    "applyFilters": "Appliquer les filtres",
+    "clearFilters": "Effacer les filtres",
+    "noResults": "Aucun résultat",
+    "addToFavorites": "Ajouter aux favoris",
+    "removeFromFavorites": "Retirer des favoris"
+  },
+  "universities": {
+    "title": "Programmes Universitaires",
+    "subtitle": "Explorez tous les programmes disponibles",
+    "search": "Rechercher des programmes...",
+    "filter": "Filtrer par",
+    "noResults": "Aucun programme trouvé",
+    "addToFavorites": "Ajouter aux favoris",
+    "removeFromFavorites": "Retirer des favoris"
+  },
+  "universitiesDirectory": {
+    "title": "Répertoire des Universités Tunisiennes",
+    "subtitle": "Découvrez toutes les universités et instituts supérieurs en Tunisie avec leurs informations de contact et sites web",
+    "search": "Rechercher des universités...",
+    "filterByRegion": "Filtrer par région",
+    "sortBy": "Trier par",
+    "allRegions": "Toutes les régions",
+    "north": "Nord",
+    "center": "Centre",
+    "south": "Sud",
+    "name": "Nom",
+    "region": "Région",
+    "website": "Site web",
+    "email": "Email",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "contactInfo": "Informations de contact",
+    "noResults": "Aucun résultat",
+    "noResultsDescription": "Essayez de modifier vos critères de recherche ou de filtrage",
+    "universitiesFound": "université(s) trouvée(s)"
+  },
+  "universitiesMap": {
+    "title": "Carte des Universités Tunisiennes",
+    "subtitle": "Découvrez l'emplacement de toutes les universités et instituts supérieurs en Tunisie sur la carte interactive",
+    "legend": "Légende de la carte",
+    "preciseLocations": "Emplacements précis",
+    "preciseLocationsDesc": "Tous les emplacements sont mis à jour avec précision",
+    "directLinks": "Liens directs",
+    "directLinksDesc": "Accès direct aux sites web des universités",
+    "completeInfo": "Informations complètes",
+    "completeInfoDesc": "Informations de contact et adresses complètes",
+    "howToUse": "Comment utiliser la carte",
+    "clickMarker": "Cliquez sur n'importe quel marqueur pour voir les informations de l'université",
+    "useSearch": "Utilisez la barre de recherche pour trouver une université spécifique",
+    "useFilter": "Utilisez le filtre pour filtrer les universités par région",
+    "clickLinks": "Cliquez sur les liens pour accéder directement aux sites web",
+    "loadingMap": "Chargement de la carte..."
+  },
+  "favorites": {
+    "title": "Mes Programmes Favoris",
+    "subtitle": "Gérez vos programmes universitaires préférés",
+    "empty": "Aucun programme favori",
+    "emptyDescription": "Ajoutez des programmes à vos favoris pour les retrouver facilement",
+    "search": "Rechercher dans les favoris...",
+    "remove": "Retirer",
+    "removeFromFavorites": "Retirer des favoris"
+  },
+  "guide": {
+    "title": "Guide d'Orientation",
+    "sections": {
+      "overview": "Vue d'ensemble",
+      "procedures": "Procédures",
+      "importantDates": "Dates importantes",
+      "documents": "Documents requis"
+    }
+  },
+  "calendar": {
+    "title": "Calendrier d'Orientation 2025",
+    "subtitle": "Restez informé des dates importantes pour l'orientation universitaire",
+    "search": "Rechercher des événements...",
+    "filterByType": "Filtrer par type",
+    "allTypes": "Tous les types",
+    "scorePublishing": "Publication des scores",
+    "primaryOrientation": "Orientation principale",
+    "finalOrientation": "Orientation finale",
+    "foreignBac": "Bac étranger",
+    "reOrientation": "Ré-orientation",
+    "testPrograms": "Programmes de test",
+    "noEvents": "Aucun événement trouvé",
+    "viewDetails": "Voir les détails",
+    "close": "Fermer"
+  },
+  "about": {
+    "title": "À propos de l'application",
+    "description": "Application d'orientation universitaire tunisienne",
+    "features": "Fonctionnalités",
+    "contact": "Contactez-nous"
+  },
+  "aiAssistant": {
+    "title": "Assistant IA pour l'Orientation Universitaire",
+    "subtitle": "Choisissez le meilleur parcours universitaire basé sur votre personnalité et vos intérêts",
+    "greeting": "Bonjour! Je suis votre assistant IA pour l'orientation universitaire 🎓",
+    "features": {
+      "personality": "Analyse de personnalité",
+      "recommendations": "Recommandations personnalisées",
+      "careers": "Exploration des carrières",
+      "market": "Analyse du marché"
+    },
+    "benefits": [
+      "Gagner du temps et de l'effort dans la recherche",
+      "Recommandations basées sur la science et les données",
+      "Meilleure compréhension de votre personnalité et capacités",
+      "Orientation vers les carrières demandées",
+      "Informations actualisées sur le marché du travail",
+      "Support gratuit et disponible 24/7"
+    ],
+    "startConversation": "Commencez votre conversation avec l'assistant IA",
+    "startNow": "Commencer maintenant",
+    "learnMore": "En savoir plus"
+  }
+} 
