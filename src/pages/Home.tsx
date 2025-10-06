@@ -108,7 +108,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Hero Section */}
+      {/* Hero Section (keep original site colors) */}
       <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <motion.div
@@ -119,6 +119,37 @@ const Home: React.FC = () => {
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               {language === 'ar' ? 'التوجيه الجامعي في تونس' : 'Orientation Universitaire en Tunisie'}
             </h1>
+            {/* Enactus hero brand and tagline (enhanced, on-brand accents) */}
+            <div className="relative flex flex-col items-center gap-5 mb-10">
+              {/* Soft amber glow behind the logo */}
+              <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+                <div className="w-56 h-56 rounded-full bg-amber-400/30 blur-3xl"></div>
+              </div>
+              {/* Logo with subtle ring */}
+              <div className="relative">
+                <div className="absolute -inset-2 rounded-xl bg-gradient-to-tr from-amber-400/60 to-yellow-300/40 blur-md"></div>
+                <div className="relative rounded-xl ring-2 ring-amber-400/60 ring-offset-2 ring-offset-white/20">
+                  <img
+                    src="/logo512.png"
+                    alt="Enactus logo"
+                    className="w-48 h-auto drop-shadow-xl select-none"
+                    draggable={false}
+                  />
+                </div>
+              </div>
+              {/* Tagline with amber accent */}
+              <p className="text-lg md:text-xl text-amber-100 max-w-3xl">
+                {language === 'ar'
+                  ? 'Enactus هو صديقك الذي يساعدك ويوجهك لتكون الأفضل في مسيرتك!'
+                  : language === 'fr'
+                  ? 'Enactus est comme un ami qui vous guide pour exceller dans votre carrière !'
+                  : 'Enactus is like your friend, here to guide you to be the best in your career!'}
+              </p>
+              <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gray-900 bg-amber-300 px-3 py-1 rounded-full">
+                <span className="w-2 h-2 rounded-full bg-amber-600"></span>
+                Enactus • Guidance
+              </span>
+            </div>
             <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
               {language === 'ar' 
                 ? 'اكتشف أفضل مسار جامعي يناسبك مع أدوات ذكية وتوصيات مخصصة'
@@ -143,8 +174,8 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      {/* Quick Actions */}
-      <div className="py-16 bg-white dark:bg-gray-800">
+      {/* Quick Actions - Neutral surface with Enactus accents */}
+      <div className="py-16 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -172,14 +203,13 @@ const Home: React.FC = () => {
               >
                 <Link
                   to={action.href}
-                  className="block p-6 rounded-lg bg-gradient-to-r hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
-                  style={{ background: `linear-gradient(135deg, var(--tw-gradient-stops))` }}
+                  className="block p-6 rounded-lg bg-white dark:bg-gray-800 border border-amber-200/40 dark:border-amber-200/10 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
                 >
-                  <div className={`w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4`}>
-                    <action.icon className="w-6 h-6 text-white" />
+                  <div className={`w-12 h-12 bg-amber-400/20 rounded-lg flex items-center justify-center mb-4`}>
+                    <action.icon className="w-6 h-6 text-amber-600" />
                   </div>
-                  <h3 className="text-lg font-semibold text-blue-900 dark:text-white mb-2 hover:text-blue-600 dark:hover:text-blue-300 transition-colors">{action.title}</h3>
-                  <p className="text-blue-700 dark:text-blue-200 text-sm">{action.description}</p>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 hover:text-amber-600 dark:hover:text-amber-400 transition-colors">{action.title}</h3>
+                  <p className="text-gray-700 dark:text-gray-300 text-sm">{action.description}</p>
                 </Link>
               </motion.div>
             ))}
@@ -187,8 +217,8 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      {/* AI Assistant Section */}
-      <div className="py-16 bg-gradient-to-r from-pink-50 to-purple-50 dark:from-pink-900/20 dark:to-purple-900/20">
+      {/* AI Assistant Section - Soft amber background */}
+      <div className="py-16 bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-900/20 dark:to-yellow-900/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -196,8 +226,8 @@ const Home: React.FC = () => {
             className="text-center mb-12"
           >
             <div className="flex justify-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full flex items-center justify-center">
-                <SparklesIcon className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-full flex items-center justify-center">
+                <SparklesIcon className="w-8 h-8 text-gray-900" />
               </div>
             </div>
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
@@ -211,7 +241,7 @@ const Home: React.FC = () => {
             </p>
             <Link
               to="/ai-assistant"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-lg font-semibold hover:from-pink-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 text-gray-900 rounded-lg font-semibold hover:from-amber-600 hover:to-yellow-600 transition-all duration-300 transform hover:scale-105"
             >
               {language === 'ar' ? 'ابدأ المحادثة' : 'Commencer la conversation'}
               <ArrowRightIcon className="w-5 h-5 ml-2 rtl:mr-2" />
@@ -252,8 +282,8 @@ const Home: React.FC = () => {
                   to={feature.href}
                   className="block p-6 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
                 >
-                  <div className={`w-12 h-12 ${feature.color} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                    <feature.icon className="w-6 h-6 text-white" />
+                  <div className={`w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                    <feature.icon className="w-6 h-6 text-gray-900" />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                     {feature.title}
@@ -269,7 +299,7 @@ const Home: React.FC = () => {
       </div>
 
       {/* Calendar Section */}
-      <div className="py-16 bg-gray-50 dark:bg-gray-900">
+      <div className="py-16 bg-amber-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -338,7 +368,7 @@ const Home: React.FC = () => {
       )}
 
       {/* Call to Action */}
-      <div className="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      <div className="py-16 bg-gradient-to-r from-amber-500 to-yellow-500 text-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -347,7 +377,7 @@ const Home: React.FC = () => {
             <h2 className="text-3xl font-bold mb-4">
               {language === 'ar' ? 'جاهز لبدء رحلتك الجامعية؟' : 'Prêt à commencer votre parcours universitaire?'}
             </h2>
-            <p className="text-xl text-blue-100 mb-8">
+            <p className="text-xl text-gray-800/80 mb-8">
               {language === 'ar' 
                 ? 'استخدم أدواتنا الذكية لاختيار أفضل مسار جامعي يناسبك'
                 : 'Utilisez nos outils intelligents pour choisir le meilleur parcours universitaire qui vous convient'
@@ -356,13 +386,13 @@ const Home: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/ai-assistant"
-                className="px-8 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                className="px-8 py-3 bg-gray-900 text-amber-300 rounded-lg font-semibold hover:bg-gray-800 transition-colors"
               >
                 {language === 'ar' ? 'ابدأ مع المساعد الذكي' : 'Commencer avec l\'assistant IA'}
               </Link>
               <Link
                 to="/universities"
-                className="px-8 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+                className="px-8 py-3 border-2 border-gray-900 text-gray-900 rounded-lg font-semibold hover:bg-gray-900 hover:text-amber-300 transition-colors"
               >
                 {language === 'ar' ? 'استكشف الجامعات' : 'Explorer les universités'}
               </Link>
